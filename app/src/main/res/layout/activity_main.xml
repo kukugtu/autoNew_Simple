@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kukugtu.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/base_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.kukugtu.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="200px">
+
+
+            <TextView
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:background="@color/btn_bg"
+                android:text="普通的View"
+                android:paddingTop="50px"
+                android:textSize="30px"/>
+
+            <TextView
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:background="@color/btn_bg"
+                android:text="普通的View"
+                android:layout_margin="200px"
+                android:paddingTop="50px"
+                android:textSize="30px"/>
+
+
+            <TextView
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:padding="50px"
+                android:layout_marginTop="200px"
+                android:background="@color/btn_bg"
+                android:text="普通的View"
+                android:textSize="30px"/>
+
+            <com.kukugtu.autolayoutdemo.MyLineTextView
+                android:id="@+id/my_view"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:layout_margin="200px"
+                app:inTextColor="#ff0000"
+                app:inTextSize="200px"
+                app:lineColor="#00ff00"
+                app:lineSize="50px"
+                app:text="自定义View"/>
+
+            <com.kukugtu.autolayout.AutoLinearLayout
+                android:id="@+id/linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="1080px"
+                android:layout_marginTop="200px"
+                android:background="@color/btn_bg_pre"/>
+
+            <com.kukugtu.autolayout.AutoLinearLayout
+                android:layout_width="600px"
+                android:layout_height="300px"
+                android:layout_marginTop="200px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="300px"
+                    android:layout_height="300px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/head21"/>
+
+                <com.kukugtu.autolayout.AutoLinearLayout
+                    android:layout_width="300px"
+                    android:layout_height="300px"
+                    android:background="#ff0000"
+                    android:orientation="vertical"/>
+            </com.kukugtu.autolayout.AutoLinearLayout>
+
+            <com.kukugtu.autolayout.AutoLinearLayout
+                android:layout_width="600px"
+                android:layout_height="300px"
+                android:orientation="horizontal">
+
+                <com.kukugtu.autolayout.AutoLinearLayout
+                    android:layout_width="300px"
+                    android:layout_height="300px"
+                    android:background="#ff0000"
+                    android:orientation="vertical"/>
+
+                <ImageView
+                    android:layout_width="300px"
+                    android:layout_height="300px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/head21"/>
+
+
+            </com.kukugtu.autolayout.AutoLinearLayout>
+
+
+            <TextView
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:layout_marginTop="200px"
+                android:layout_marginLeft="200px"
+                android:background="#ff0000"
+                android:text="代码中更改属性啊啊啊"
+                android:textSize="100px"/>
+
+            <TextView
+                android:id="@+id/change_attr"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:layout_marginTop="200px"
+                android:layout_marginLeft="200px"
+                android:background="#ff0000"
+                android:text="代码中更改属性啊啊啊"
+                android:textSize="100px"/>
+
+            <com.kukugtu.autolayoutdemo.AutoCardView
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:layout_marginTop="200px"
+                app:cardCornerRadius="10px">
+
+                <TextView
+                    android:layout_width="300px"
+                    android:layout_height="300px"
+                    android:background="#ff0000"
+                    android:text="CardView中的View"
+                    android:textSize="30px"/>
+            </com.kukugtu.autolayoutdemo.AutoCardView>
+
+        </com.kukugtu.autolayout.AutoLinearLayout>
+
+    </ScrollView>
+
+</com.kukugtu.autolayout.AutoRelativeLayout>
